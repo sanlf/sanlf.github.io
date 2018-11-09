@@ -37,7 +37,7 @@ Los objetivos que originalmente me plantee fueron:
 - Crear una aplicación web similar a la del proyecto original pero en heroku.
 
 
-En los resultados encontrados diré cuales objetivos logré y cuales no.
+En la conlusión diré cuales objetivos logré y cuales no.
 
 ## Problemas encontrados
 Basandome en un proyecto ya hecho y siendo solo un clasificador binario, pense que sería un trabajo sencillo
@@ -150,11 +150,36 @@ mal sino que la mayoría se deben a mis propias limitaciones y falta de conocimi
 
 ## Resultados encontrados
 
--Encontrar datos de entrenamiento por mi mismo para mis modelos
--Reusar modelos ya entrenados para disminuir el esfuerzo computacional que mi red tendrá que aplicar.
--Comparar los resultados obtenidos con los de la red del proyecto original.
--Crear una aplicación web similar a la del proyecto original pero en heroku.
+Después de toda la travesía, termine con 3 modelos. Un modelo igual al modelo del proyecto original, un modelo basado
+en el vgg16 y otro basado en el vgg19 para poder comparar los resultados. Además de esto, veré como se desempeña
+la red del proyecto original con un conjunto de prueba (conjunto con el cual calificare a todas).
 
 
 # Conclusiones
 
+De los objetivos que me plantié, los resultados fueron:
+
+- Encontrar datos de entrenamiento por mi mismo para mis modelos
+
+
+    Logré este objetivo con relativa facilidad gracias a la base de datos de kaggle de safebooru y a lorempicsum.
+
+    
+-Reusar modelos ya entrenados para disminuir el esfuerzo computacional que mi red tendrá que aplicar.
+
+
+    Los modelos vgg16 y vgg19 cumplen este objetivo, pues en menos epochs lograron resultados equivalentes a la
+    red base con más epochs. Aunque es de notarse que al entrenar las redes vgg16 y vgg19, no solo necesite de la
+    VRAM de mi GPU sino también del RAM de mi computadora, ralentizandola.
+
+    
+-Comparar los resultados obtenidos con los de la red del proyecto original.
+
+
+    Ciertamente fue logrado. Está en la sección de resultados enocntrados.
+
+    
+-Crear una aplicación web similar a la del proyecto original pero en heroku.
+
+
+    Lastimosamente no lo pude lograr. No estoy seguro de las razones por las cuales sucede.
