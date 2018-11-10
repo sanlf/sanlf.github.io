@@ -152,7 +152,67 @@ mal sino que la mayoría se deben a mis propias limitaciones y falta de conocimi
 
 Después de toda la travesía, termine con 3 modelos. Un modelo igual al modelo del proyecto original, un modelo basado
 en el vgg16 y otro basado en el vgg19 para poder comparar los resultados. Además de esto, veré como se desempeña
-la red del proyecto original con un conjunto de prueba (conjunto con el cual calificare a todas).
+la red del proyecto original con un conjunto de prueba (conjunto con el cual calificare a todas, con unas 2000 imágenes
+que son de anime y otras 2000 que no lo son).
+
+
+1. Original
+
+    Visualmente el modelo se ve:
+    
+    mod_anime
+    
+    La matriz de confusión de la predicción al conjunto de prueba:
+    
+    conf_mat
+
+    2 ejemplos de imagenes que clasificó correctamente:
+
+    2 ejemplos de imágenes que clasificó incorrectamente:
+
+2. Base
+
+    Visualmente el modelo se ve:
+    
+    mod_anime
+    
+    La matriz de confusión de la predicción al conjunto de prueba:
+    
+    conf_mat
+
+    2 ejemplos de imagenes que clasificó correctamente:
+
+    2 ejemplos de imágenes que clasificó incorrectamente:
+
+
+3. vgg16
+
+    Visualmente el modelo se ve:
+    
+    mod_anime
+    
+    La matriz de confusión de la predicción al conjunto de prueba:
+    
+    conf_mat
+
+    2 ejemplos de imagenes que clasificó correctamente:
+
+    2 ejemplos de imágenes que clasificó incorrectamente:
+
+
+4. vgg19
+
+    Visualmente el modelo se ve:
+    
+    mod_anime
+    
+    La matriz de confusión de la predicción al conjunto de prueba:
+    
+    conf_mat
+
+    2 ejemplos de imagenes que clasificó correctamente:
+
+    2 ejemplos de imágenes que clasificó incorrectamente:
 
 
 # Conclusiones
@@ -165,7 +225,7 @@ De los objetivos que me plantié, los resultados fueron:
     Logré este objetivo con relativa facilidad gracias a la base de datos de kaggle de safebooru y a lorempicsum.
 
     
--Reusar modelos ya entrenados para disminuir el esfuerzo computacional que mi red tendrá que aplicar.
+- Reusar modelos ya entrenados para disminuir el esfuerzo computacional que mi red tendrá que aplicar.
 
 
     Los modelos vgg16 y vgg19 cumplen este objetivo, pues en menos epochs lograron resultados equivalentes a la
@@ -173,13 +233,16 @@ De los objetivos que me plantié, los resultados fueron:
     VRAM de mi GPU sino también del RAM de mi computadora, ralentizandola.
 
     
--Comparar los resultados obtenidos con los de la red del proyecto original.
+- Comparar los resultados obtenidos con los de la red del proyecto original.
 
 
-    Ciertamente fue logrado. Está en la sección de resultados enocntrados.
+    Ciertamente fue logrado. Y comparando los resultados, puedo decir que hacer transfer learning da mejores resultados
+    que hacer una red desde 0, ya que los modelos vgg16 y vgg19 mostraron resultados igual o mejores que los otros
+    con menos epochs. En cuanto a la red original, parece ser bastante buena, incluso mejor que mi red base, gracias
 
     
--Crear una aplicación web similar a la del proyecto original pero en heroku.
+- Crear una aplicación web similar a la del proyecto original pero en heroku.
 
 
     Lastimosamente no lo pude lograr. No estoy seguro de las razones por las cuales sucede.
+    
