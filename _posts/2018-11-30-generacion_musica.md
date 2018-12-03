@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Generación de música con LSTM"
-date:   2018-11-08
+date:   2018-11-30
 ---
 
 ## Breve introducción
@@ -23,7 +23,7 @@ hablado y escrito, música, películas, el clima, etc., lo cual tiene sentido cu
 cuando hablas lo siguiente que vas a decir depende de el flujo de la conversación hasta el momento, o que el
 clima de mañana depende en parte del clima de hoy.
 
-![recurrent-network](assets/recurrent/recurrent_network.png)
+![recurrent-network](/assets/png/recurrent/recurrent_network.png)
 
 
 Algo curioso de estas redes neuronales es que el concepto no es nuevo. Desde 1980 parecen existir pero hasta
@@ -32,7 +32,7 @@ hace pocos años se ha tenido el suficiente poder de computo para hacerlas andar
 
 ## Long short-term memory (LSTM)
 
-![lstm](assets/recurrent/lstm.png)
+![lstm](/assets/png/recurrent/lstm.png)
 
 Las redes LSTM son una variante de red neuronal recurrente. Estas redes surgieron principalmente para solventar
 un problema de dependencia de las redes recurrentes. Cuando el contexto necesario para predecir es de
@@ -69,7 +69,7 @@ of Zelda Twilight Princess, ya que cada juego tiene un tono variado pienso que e
 El modelo de la red es muy similar al modelo original, los únicos cambios que hice fue aumentar el número de
 neuronas de las capas de LSTM, aumentar el dropout entre las capas y cambiar el optimizador de rmsprop a Adam
 
-'''python
+```python
 def create_network(network_input, n_vocab):
     model = Sequential()
     model.add(LSTM(
@@ -87,7 +87,7 @@ def create_network(network_input, n_vocab):
     model.add(Dense(n_vocab))
     model.add(Activation('softmax'))
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop')
-'''
+```
 
 Además en cuanto al entrenamiento, cambié el número de batches de 64 a 32 y el número de epochs a 250.
 
@@ -104,7 +104,12 @@ diferente y una última vez utilizando la música de todos los juegos.
 De Ocarina of Time obtuve 16 canciones para entrenar pero desafortunadamente perdí los pesos del
 modelo entrenado y solo tengo los resultados:
 
-![](zelda_music/ocarina/ocarina.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/ocarina/ocarina.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
 
 ### Majora's Mask
@@ -112,7 +117,12 @@ modelo entrenado y solo tengo los resultados:
 De Majora's Mask obtuve 9 canciones para entrenar y la menor pérdida obtenida fue en el epoch 106 con 0.0259 de
 pérdida.
 
-![](zelda_music/majoras/majoras.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/majoras/majoras.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
 
 ### The Wind Waker
@@ -120,14 +130,25 @@ pérdida.
 De The Wind Waker obtuve 14 canciones para entrenar y la menor pérdida obtenida fue en el epoch 210 con 0.0105 de
 pérdida.
 
-![](zelda_music/waker/waker.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/waker/waker.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
+
 
 ### Twilight Princess
 
 De The Wind Waker obtuve 10 canciones para entrenar y la menor pérdida obtenida fue en el epoch 220 con 0.0324 de
 pérdida.
 
-![](zelda_music/twilight/twilight.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/twilight/twilight.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
 
 ## Zelda
@@ -139,11 +160,26 @@ fue en el epoch 234 con 0.0368 de pérdida.
 Como es el resultado de todas las canciones juntas, corrí 3 veces la generación de música para ver que diferencias
 había cada vez que generaba.
 
-![](zelda_music/all/all1.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/all/all1.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
-![](zelda_music/all/all2.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/all/all2.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
-![](zelda_music/all/all3.mp3)
+<center>
+<audio controls="controls">
+<source type="audio/mp3" src="/assets/zelda_music/all/all3.mp3"></source>
+<p>Your browser does not support the audio element.</p>
+</audio>
+</center>
 
 
 ## Conclusiones
