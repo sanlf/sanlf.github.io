@@ -111,6 +111,10 @@ modelo entrenado y solo tengo los resultados:
 </audio>
 </center>
 
+![music-sheet-ocarina1](/assets/png/zelda/ocarina/sheet/part1.png)
+![music-sheet-ocarina2](/assets/png/zelda/ocarina/sheet/part2.png)
+![music-sheet-ocarina3](/assets/png/zelda/ocarina/sheet/part3.png)
+
 
 ### Majora's Mask
 
@@ -123,6 +127,9 @@ pérdida.
 <p>Your browser does not support the audio element.</p>
 </audio>
 </center>
+
+![music-sheet-majoras1](/assets/png/zelda/majoras/sheet/part1.png)
+![music-sheet-majoras2](/assets/png/zelda/majoras/sheet/part2.png)
 
 
 ### The Wind Waker
@@ -137,6 +144,10 @@ pérdida.
 </audio>
 </center>
 
+![music-sheet-waker1](/assets/png/zelda/waker/sheet/part1.png)
+![music-sheet-waker2](/assets/png/zelda/waker/sheet/part2.png)
+![music-sheet-waker3](/assets/png/zelda/waker/sheet/part3.png)
+![music-sheet-waker4](/assets/png/zelda/waker/sheet/part4.png)
 
 ### Twilight Princess
 
@@ -150,6 +161,9 @@ pérdida.
 </audio>
 </center>
 
+![music-sheet-twilight1](/assets/png/zelda/twilight/sheet/part1.png)
+![music-sheet-twilight2](/assets/png/zelda/twilight/sheet/part2.png)
+![music-sheet-twilight3](/assets/png/zelda/twilight/sheet/part3.png)
 
 ## Zelda
 
@@ -167,6 +181,11 @@ había cada vez que generaba.
 </audio>
 </center>
 
+
+![music-sheet-all1](/assets/png/zelda/all/sheet/1/part1.png)
+![music-sheet-all2](/assets/png/zelda/all/sheet/1/part2.png)
+![music-sheet-all3](/assets/png/zelda/all/sheet/1/part3.png)
+
 <center>
 <audio controls="controls">
 <source type="audio/mp3" src="/assets/zelda_music/all/all2.mp3"></source>
@@ -174,12 +193,21 @@ había cada vez que generaba.
 </audio>
 </center>
 
+![music-sheet-all1](/assets/png/zelda/all/sheet/2/part1.png)
+![music-sheet-all2](/assets/png/zelda/all/sheet/2/part2.png)
+![music-sheet-all3](/assets/png/zelda/all/sheet/2/part3.png)
+
+
 <center>
 <audio controls="controls">
 <source type="audio/mp3" src="/assets/zelda_music/all/all3.mp3"></source>
 <p>Your browser does not support the audio element.</p>
 </audio>
 </center>
+
+![music-sheet-all1](/assets/png/zelda/all/sheet/3/part1.png)
+![music-sheet-all2](/assets/png/zelda/all/sheet/3/part2.png)
+![music-sheet-all3](/assets/png/zelda/all/sheet/3/part3.png)
 
 
 ## Conclusiones
