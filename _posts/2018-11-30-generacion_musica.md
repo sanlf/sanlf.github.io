@@ -174,6 +174,8 @@ fue en el epoch 234 con 0.0368 de pérdida.
 Como es el resultado de todas las canciones juntas, corrí 3 veces la generación de música para ver que diferencias
 había cada vez que generaba.
 
+### Resultado 1
+
 <center>
 <audio controls="controls">
 <source type="audio/mp3" src="/assets/zelda_music/all/all1.mp3"></source>
@@ -186,6 +188,9 @@ había cada vez que generaba.
 ![music-sheet-all2](/assets/png/zelda/all/sheet/1/part2.png)
 ![music-sheet-all3](/assets/png/zelda/all/sheet/1/part3.png)
 
+
+### Resultado 2
+
 <center>
 <audio controls="controls">
 <source type="audio/mp3" src="/assets/zelda_music/all/all2.mp3"></source>
@@ -197,6 +202,7 @@ había cada vez que generaba.
 ![music-sheet-all2](/assets/png/zelda/all/sheet/2/part2.png)
 ![music-sheet-all3](/assets/png/zelda/all/sheet/2/part3.png)
 
+### Resultado 3
 
 <center>
 <audio controls="controls">
